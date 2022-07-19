@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+    .header{
+        font-weight: bolder;
+        font-size: 48px;
+        color: white;
+        font-family:Sofia;
+        transform:translate(588px,-5px);
+
+    }
+    body{
+        background-image:url(https://cdn.pixabay.com/photo/2015/08/28/11/27/space-911785_1280.jpg);
+        overflow: hidden;  
+    }
+    .navigation ul{
+        list-style-type:none;
+         display:flex 
+         
+    }
+    .navigation ul li a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        padding:15px;
+        text-decoration: none;
+        transform:translate(0px,17px);
+    }
+    .navigation{
+        background-color:rgba(0,0,0,0.5);
+        padding:0px;
+        margin:0px;
+        border-radius: 23px;
+        border-width: 1px;
+        transform:translate(0px,17px);
+    }
+    #search{
+        transform:translate(636px,0px);
+        border-radius:11px;
+        background-image: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-1024.png);
+        background-size: 25px;
+        background-repeat:no-repeat ;
+    }
+    .navigation ul li a:hover{
+        color:  rgb(191, 166, 38);
+    }
+    input{
+        font-style: italic;
+        font-weight: bold;
+        padding:0px;
+        text-indent: 23px;
+    }
+   .navigation ul li{
+       transform:translate(623px,0px);
+    }
+   #target{
+       transform:translate(639px,0px);
+       background-color: orangered;
+       border-radius: 23px;
+    }
+   .best{
+       font-family:Lobster;
+       text-align:center;
+       transform: translate(0px,9px);
+       font-size: 37px;
+    }
+    .containera{
+        display:flex;
+        width:25%;
+    }
+    .containerb{
+        display:flex;
+        width:25%;
+    }
+    .containerc{
+        display:flex;
+        width:25%;
+    }
+    .containerd{
+        display:flex;
+        width:25%;
+    }
+    .imagebox{
+        display:flex;
+        
+        height:248px;
+    }
+    .imagea {
+        display: block;
+        width: 50%;
+        height: auto;
+        border: 10px solid transparent;
+        border-image:url(https://www.w3schools.com/cssref/border.png) 20 stretch;
+    }
+    .imageb {
+        display: block;
+        width: 50%;
+        height: auto;
+        border: 10px solid transparent;
+        border-image:url(https://www.w3schools.com/cssref/border.png) 20 stretch;
+    }
+    .imagec {
+        display: block;
+        width: 50%;
+        height: auto;
+        border: 10px solid transparent;
+        border-image:url(https://www.w3schools.com/cssref/border.png) 20 stretch;
+    }
+    .imaged {
+       display: block;
+        width: 50%;
+        height: auto;
+        border: 10px solid transparent;
+        border-image:url(https://www.w3schools.com/cssref/border.png) 20 stretch;
+    }
+
+    .overlaya {
+        position: absolute;
+        width: 164px;
+        height: 248px;
+        opacity: 0;
+        transition: .5s ease;
+        backdrop-filter: blur(1px);
+    }
+    .overlayb {
+        position: absolute;
+        width: 164px;
+        height: 248px;
+        opacity: 0;
+        transition: .5s ease;
+        backdrop-filter: blur(1px);
+        
+    }
+    .overlayc {
+        position: absolute;
+        width: 164px;
+        height: 248px;
+        opacity: 0;
+        transition: .5s ease;
+        backdrop-filter: blur(1px);
+    }
+    .overlayd {
+        position: absolute;
+        width: 188px;
+        height: 244px;
+        opacity: 0;
+        
+        transition: .5s ease;
+        backdrop-filter: blur(1px);
+        transform: translate(2px,3px);
+    }
+    .containera:hover .overlaya {
+        opacity: 1;
+    }
+    .containerb:hover .overlayb {
+        opacity: 1;
+    }
+    .containerc:hover .overlayc {
+        opacity: 1;
+    }
+    
+    .containerd:hover .overlayd {
+         opacity: 1;
+    }
+    .texta{
+           color: red;
+           font-size: 20px;
+           position: absolute;
+           transform:translate(33px,90px);
+           text-decoration: none;
+    }
+    .textb{
+           color: white;
+           font-size: 20px;
+           position: absolute;
+           transform:translate(27px,77px);
+    }
+    .textc{
+           color: white;
+           font-size: 20px;
+           position: absolute;
+           transform:translate(31px,63px);
+    }          
+    .textd{
+           color: white;
+           font-size: 20px;
+           position: absolute;
+           transform:translate(44px,64px);
+    }
+    .texta a{
+        color:red;
+        font-family:Lobster;
+    }
+    .textb a{
+        color:red;
+        font-family:Lobster;
+    }
+    .textc a{
+        color:red;
+        font-family:Lobster;
+    }
+    .textd a{
+        color:red;
+        font-family:Lobster;
+    }
+    .imagebox{
+        transform:translate(58px,0px);
+    }
+    
+    
+</style>
+<body>
+    <div class="header">Booklist</div>
+    <nav class ="navigation">
+        <ul>
+            <li><a href = "#">Books</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Contact</a></li>
+            <input type="text" name="search" id="search" placeholder="Search ">
+            <li id="target"><a href="#">Sign up</a></li>
+        </ul> 
+    </nav>
+    <div class="best">
+       <h1>Bestsellers</h1> 
+    </div>  
+    <div class="imagebox">
+
+        <div class="containera">
+           <img src="https://images-eu.ssl-images-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="error" class="imagea">
+            <div class="overlaya">
+                <div class="texta">
+                    <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=asc_df_1847941834/?tag=googleshopdes-21&linkCode=df0&hvadid=396987849297&hvpos=&hvnetw=g&hvrand=8521790983271852371&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040226&hvtargid=pla-551566274852&psc=1&ext_vrnc=hi" style="text-decoration:none">BUY HERE</a>
+
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="containerb">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/410i2hlkSLL._SX322_BO1,204,203,200_.jpg" alt="error" class="imageb">
+             <div class="overlayb">
+                <div class="textb">
+                    <a href="https://www.amazon.in/Verity-Colleen-Hoover/dp/1791392792/ref=asc_df_1791392792/?tag=googleshopdes-21&linkCode=df0&hvadid=396988108707&hvpos=&hvnetw=g&hvrand=2948264334330894701&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040226&hvtargid=pla-593624532120&psc=1&ext_vrnc=hi" style="text-decoration:none">BUY HERE</a>
+
+                </div>
+
+             </div>
+        </div>
+
+        <div class="containerc">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/518ljr0qusL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="error" class="imagec">
+            <div class="overlayc">
+                <div class="textc">
+                    <a href="https://www.amazon.in/Where-Crawdads-Sing-Delia-Owens/dp/1472154665" style="text-decoration:none">BUY HERE</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="containerd">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51HhHpHp+RL._SX258_BO1,204,203,200_.jpg" alt="error" class="imaged">
+            <div class="overlayd">
+                <div class="textd">
+                    <a href="https://www.amazon.in/Ends-Us-Colleen-Hoover/dp/1804228206/ref=asc_df_1804228206/?tag=googleshopdes-21&linkCode=df0&hvadid=586311227024&hvpos=&hvnetw=g&hvrand=7106038021927288738&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040226&hvtargid=pla-1597323631863&psc=1" style="text-decoration:none">BUY HERE</a>
+
+                </div>
+
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>
